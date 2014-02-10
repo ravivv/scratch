@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date_of_visit: 2014-02-09
+  customer_id: 
+  reminder: false
+  reason: MyText
+
+two:
+  date_of_visit: 2014-02-09
+  customer_id: 
+  reminder: false
+  reason: MyText

@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @customer.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @customer.email %>
+</p>
+
+<h3>Appointments:</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Pet's Name</th>
+      <th>Date of Appointment</th>
+      <th>Reason</th>
+  </tr>
+</thead>
+<tbody>
+<% @customer.appointments.each do |appointment| %>
+<tr>
+	<td><%= appointment.pet.name %></td>
+	<td><%= appointment.date_of_visit %></td>
+	<td><%= appointment.reason %></td>		
+</tr>
+<% end%>
+</tbody>
+</table>
+
+
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
